@@ -6,8 +6,9 @@ const HeaderMenu = () => {
   const [ search, setSearch ] = useState(false);
 
   const onSearchModeToggle = () => {
-    setSearch(true);
-  }
+    setSearch(search);
+  };
+  
   return(
     <HeaderSection.HeaderFrame>
       <ul className="left_menu flex flex_ai_c">
@@ -18,14 +19,14 @@ const HeaderMenu = () => {
         </li>
         <li className="relative">
           <span>ABOUT</span>
-          {/* <ul className="absolute">
+          <ul className="absolute">
             <li>
               <span>BUSINESS</span>
             </li>
             <li>
               <span>COMPANY</span>
             </li>
-          </ul> */}
+          </ul>
         </li>
         <li>
           <span>DESIGN</span>
@@ -47,11 +48,11 @@ const HeaderMenu = () => {
           </div>
         </li>
         <ul className="relative flex flex_jc_sb flex_ai_c">
-          <li className={`${search === true ? "" : "active"} search_mode absolute`}>
+          <li className={`${search !== true ? "" : "active"} search_mode absolute`}>
             <label htmlFor=""></label>
-            <input type="text"/>
+            <input type="text" placeholder="SEARCH FOR INFOMATION"/>
             <button className="search_btn flex flex_jc_c flex_ai_c img_box">
-              <img src={images.header_search} alt="통합검색 바로가기"/>
+              <img src={images.header_search_active} alt="통합검색 바로가기"/>
             </button>
           </li>
           <li>
@@ -73,7 +74,7 @@ const HeaderMenu = () => {
             <div className="flex flex_jc_c flex_ai_c img_box">
               <img src={images.header_mypage} alt="마이페이지 바로가기"/>
             </div>
-            <div className="flex flex_jc_c flex_ai_c img_box">
+            <div className="flex flex_jc_c flex_ai_c img_box" onClick={onSearchModeToggle}>
               <img src={images.header_search} alt="통합검색 바로가기"/>
             </div>
           </li>

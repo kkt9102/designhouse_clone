@@ -24,6 +24,15 @@ export const HeaderSection = {
         &:last-child {
           ::after {display:none;}
         }
+        ul {display:none; width:100%; top:100%; left:0; 
+          li {background:#ffffff;
+            :hover {background:#fdd000;}
+            span {padding:1rem 0; color:#000000;}
+          }
+        }
+        :hover {
+          ul {display:block;}
+        }
       }
     }
     .right_menu {flex-basis:53%;
@@ -36,9 +45,11 @@ export const HeaderSection = {
           li {flex-grow:1;
             span {font-size:1.1rem; font-weight:900; font-family:"Lato"; letter-spacing:1px;}
           }
-          .search_mode {flex-basis:100%; width:100%; height:100%; opacity:0; visibility:hidden; z-index:-1; background:#000000;
-            input[type="text"] {width:82%;}
-            .search_btn {border:1px solid red; flex-basis:10%;}
+          .search_mode {display:flex; justify-content:space-between; flex-basis:100%; width:100%; height:100%; opacity:0; visibility:hidden; z-index:-1; background:#000000;
+            input[type="text"] {width:82%; padding:1rem 0.5rem; border:none; background:#000000; font-size:1.4rem; color:#fdd000;
+              ::placeholder {color:#fdd000;}
+            }
+            .search_btn {flex-basis:10%;}
             &.active {opacity:1; visibility:visible; z-index:2;}
           }
         }
