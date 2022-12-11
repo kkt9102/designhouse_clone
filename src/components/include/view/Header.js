@@ -1,5 +1,5 @@
 import { HeaderSection } from "../style/headerStyle";
-import { images } from "../../../resources/img/img";
+import images from "../../../resources/img/img";
 const Header = () => {
   return(
     <HeaderSection.HeaderFrame>
@@ -33,7 +33,9 @@ const Header = () => {
       </ul>
       <ul className="right_menu flex">
         <li className="logo">
-          <div className="img_box"></div>
+          <div className="img_box">
+            <img src={images.Logo_web} alt=""/>
+          </div>
         </li>
         <li>
           <span>LIBARY</span>
