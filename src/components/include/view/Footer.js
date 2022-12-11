@@ -56,14 +56,14 @@ const Footer = () => {
         </div>
         <ul className="flex flex_jc_c">
           {FooterTopMenu.map((item, index) => 
-            <li key={index}>{item.tit}</li>
+            <li key={index} className="cursor_p">{item.tit}</li>
           )}
         </ul>
       </div>
       <div className="bottom_section flex flex_dir_c flex_ai_c flex_jc_c">
         <ul className="flex flex_jc_c">
           {FooterBottomMenu.map((item, index) => 
-            <li key={index}>{item.tit}</li>
+            <li key={index} className="cursor_p">{item.tit}</li>
           )}
         </ul>
         <ul className="comp_info flex flex_jc_c">
@@ -72,7 +72,7 @@ const Footer = () => {
           <li>사업자등록번호 203-81-43529</li>
           <li>전화번호 02-2275-6151</li>
         </ul>
-        <p className="copyright">Copyright © 2016 Designhouse inc. All rights reserved.</p>
+        <p className="copyright flex flex_jc_c">Copyright © 2016 Designhouse inc. All rights reserved.</p>
       </div>
     </FooterSection.FooterFrame>
   )
