@@ -5,21 +5,40 @@ export const HeaderSection = {
   HeaderFrame:styled.div`
     display: flex;
     ul {
-      li {padding:1.5rem 0;
-        span {font-weight:600; font-family:"Lato";}
+      li {padding:1.3rem 0;
+        span {font-weight:600;  font-display: swap;}
       }
-      &.left_menu {flex-basis:40%;
-        > li {display:flex; justify-content: center; align-items: center;
-          :not(:first-child) { background:#000000;}
-          span {font-size:1.2rem; color:#ffffff;}
+      &.left_menu {flex-basis:47.5%;
+        > li {display:flex; justify-content: center; align-items: center; flex-grow:1;
+          &.bars_btn {padding:0 3.3rem;}
+          :not(.bars_btn) {flex-basis:calc(95.5%/5); background:#000000;}
+          span {font-size:1.1rem; font-weight:700; color:#ffffff; letter-spacing:0.9px;}
+          :hover:not(.bars_btn) {background:#fdd000;}
+          &.drop_menu {
+            ul {display:none; width:100%; height:100%; top:100%;
+              li {
+                span {color:#000000;}
+                &:hover {background:#fdd000;}
+              }
+            }
+            &:hover {
+              ul {display:flex; flex-direction:column; justify-content:center;
+                li {display:inherit; justify-content:inherit;}
+              }
+            }
+          }
         }
       }
-      &.right_menu {
+      &.right_menu {flex-basis:52.5%;
         > li {display:flex; justify-content: center; align-items: center;
-          :not(:first-child,:last-child) {
-            background:#fdd000;
+          :not(:first-child,:last-child) {position:relative; flex-grow:1; background:#fdd000;
+            ::after {content:""; position:absolute; width:1px; height:1.2rem; background:#b99f29; top:calc(50% -0.5rem); left:0;}
           }
-          span {font-size:1.2rem;}
+          &:first-child {flex-basis:27.5%;
+            .img_box {padding-left:2.5rem;}
+          }
+          &:last-child {flex-basis:14.5%;}
+          span {font-size:1.2rem; font-weight:900; letter-spacing:0.7px;}
         }
       }
     }

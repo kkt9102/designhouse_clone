@@ -5,7 +5,9 @@ const Header = () => {
     <HeaderSection.HeaderFrame>
       <ul className="left_menu flex">
         <li className="bars_btn">
-          <span></span>
+          <div className="img_box">
+            <img src={images.bars_btn} alt=""/>
+          </div>
         </li>
         <li className="drop_menu relative">
           <span>ABOUT</span>
@@ -25,7 +27,7 @@ const Header = () => {
           <span>LIVING</span>
         </li>
         <li>
-          <span>STLYE</span>
+          <span>STYLE</span>
         </li>
         <li>
           <span>CULTURE</span>
@@ -33,7 +35,7 @@ const Header = () => {
       </ul>
       <ul className="right_menu flex">
         <li className="logo">
-          <div className="img_box">
+          <div className="img_box flex flex_jc_s">
             <img src={images.Logo_web} alt=""/>
           </div>
         </li>
@@ -53,12 +55,16 @@ const Header = () => {
           <span>EVENT</span>
         </li>
         <li>
-          <ul>
+          <ul className="flex">
             <li className="login">
-              <span></span>
+              <div className="login img_box">
+                <img src={images.header_mypage} alt=""/>
+              </div>
             </li>
             <li className="search">
-              <span></span>
+              <div className="login img_box">
+                <img src={images.header_search} alt=""/>
+              </div>
             </li>
           </ul>
         </li>
