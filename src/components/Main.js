@@ -12,7 +12,9 @@ const Main = () => {
     <>
       <Header/>
       <MainSection.MainFrame>
-     
+        <div className="flex flex_jc_sb">
+          
+        </div>
         <Footer />
       </MainSection.MainFrame>
     </>
