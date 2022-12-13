@@ -40,7 +40,7 @@ const Header = () => {
           </div>
         </li>
         <li>
-          <span>LIBARY</span>
+          <span style={{letterSpacing:"1.3px"}}>LIBRARY</span>
         </li>
         <li>
           <span>CLASS&TOUR</span>
@@ -49,13 +49,13 @@ const Header = () => {
           <span>MEMBERSHIP LOUNGE</span>
         </li>
         <li>
-          <span>구독&쇼핑</span>
+          <span style={{letterSpacing:"0px", fontWeight:"900", fontSize:"1.14rem"}}>구독&#38;쇼핑</span>
         </li>
         <li>
           <span>EVENT</span>
         </li>
         <li>
-          <ul className="flex">
+          <ul className="flex flex_jc_sa flex_ai_c">
             <li className="login">
               <div className="login img_box">
                 <img src={images.header_mypage} alt=""/>
