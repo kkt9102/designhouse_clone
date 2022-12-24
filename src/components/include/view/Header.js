@@ -6,7 +6,7 @@ const Header = () => {
       <ul className="left_menu flex">
         <li className="bars_btn">
           <div className="img_box">
-            <img src={images.bars_btn} alt=""/>
+            <img src={images.bars_btn_w} alt=""/>
           </div>
         </li>
         <li className="drop_menu relative">
@@ -43,13 +43,13 @@ const Header = () => {
           <span style={{letterSpacing:"1.3px"}}>LIBRARY</span>
         </li>
         <li>
-          <span>CLASS&TOUR</span>
+          <span>CLASS &#38; TOUR</span>
         </li>
         <li>
           <span>MEMBERSHIP LOUNGE</span>
         </li>
         <li>
-          <span style={{letterSpacing:"0px", fontWeight:"900", fontSize:"1.14rem"}}>구독&#38;쇼핑</span>
+          <span style={{letterSpacing:"0px", fontWeight:"900", fontSize:"1.14rem"}}>구독 &#38; 쇼핑</span>
         </li>
         <li>
           <span>EVENT</span>
