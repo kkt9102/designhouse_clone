@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { HeaderSection } from "../style/headerStyle";
 import images from "../../../resources/img/img";
 const Header = () => {
+  const [search, setSearch] = useState(false);
   return(
     <HeaderSection.HeaderFrame>
       <ul className="left_menu flex">
@@ -57,12 +59,12 @@ const Header = () => {
         <li>
           <ul className="flex flex_jc_sa flex_ai_c">
             <li className="login">
-              <div className="login img_box">
+              <div className="login img_box cursor_p">
                 <img src={images.header_mypage} alt=""/>
               </div>
             </li>
             <li className="search">
-              <div className="login img_box">
+              <div className="login img_box cursor_p">
                 <img src={images.header_search} alt=""/>
               </div>
             </li>
