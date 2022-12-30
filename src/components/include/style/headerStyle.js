@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const HeaderSection = {
   HeaderFrame:styled.div`
     display: flex;
+    position:relative;
+    z-index: 2;
     ul {
       li {padding:1.3rem 0;
         span {font-weight:600;  font-display: swap;}
@@ -38,6 +40,7 @@ export const HeaderSection = {
           :not(:first-child,:last-child) {position:relative; flex-grow:1; background:#fdd000;}
           :nth-child(n + 3):nth-child(-n + 6)::after {content:""; position:absolute; width:1px; height:1.2rem; background:#b99f29; top:calc(50% -0.5rem); left:0;}
           span {font-size:1.1rem; font-weight:700; font-family:"NotoKr"; letter-spacing:1px;}
+          &.logo {background:#ffffff;}
           &:first-child {flex-basis:31.8%;
             .img_box {padding-left:2.7rem;}
           }
