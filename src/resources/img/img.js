@@ -8,6 +8,9 @@ import slide_bg from "./main_v_bg.png";
 import slide_img_1 from "./1659665301_31.jpg";
 import footer_logo from "./footer_logo.png";
 
+import content1 from "./contents1.jpg";
+import content2 from "./contents2.jpg";
+
 const images = {
   Logo_web,
   bars_btn_w,
@@ -18,6 +21,9 @@ const images = {
   slide_bg,
   slide_img_1,
   footer_logo,
+
+  content1,
+  content2
 };
 
 export default images;

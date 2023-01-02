@@ -22,6 +22,21 @@ const SlideItems = [
   },
 ];
 
+const FirstContents = [
+  {
+    id: 1,
+    type: "1",
+    title: "2022 한국 디자인 연감",
+    contents: "자부한다. 현재 대한민국에서 이처럼 수많은 디자이너, 다양한 분야의 디자인 결과물을 해마다 한 권의 책으로 집대성한 프로젝트는 <한국 디자인 연감> 밖에 없다고,"
+  },
+  {
+    id: 2,
+    type: "2",
+    title: "PEARL ON THE TABLE",
+    contents: "테이블 위에 올려진 손을 더욱 화사하게 빛내줄 패션 브랜드의 진주 주얼리"
+  }
+]
+
 const SlideContents = () => {
   return (
     <SlideSection.SlideFrame>
@@ -57,6 +72,7 @@ const SlideContents = () => {
           </SwiperSlide>
         )}
       </Swiper>
+      <div>111</div>
     </SlideSection.SlideFrame>
   );
 };
