@@ -8,7 +8,7 @@ const Header = () => {
       <ul className="left_menu flex">
         <li className="bars_btn">
           <div className="img_box">
-            <img src={images.bars_btn_w} alt=""/>
+            <img src={images.bars_btn_w} alt="" className="cursor_p"/>
           </div>
         </li>
         <li className="drop_menu relative">

@@ -12,7 +12,9 @@ export const HeaderSection = {
       &.left_menu {flex-basis:44%;
         > li {position:relative; display:flex; justify-content: center; align-items: center;
           /* &.bars_btn {padding:0 3.3rem;} */
-          &.bars_btn {flex-basis:10rem;}
+          &.bars_btn {flex-basis:10rem;
+            .img_box {margin:10% 0 0 -5%;}
+          }
           :not(.bars_btn) {flex-basis:calc((100% - 10rem)/5); background:#000000;
           }
           :not(.bars_btn, :nth-child(2))::after {content:""; position:absolute; width:1px; height:1.1rem; top:calc(50% - 0.6rem); left:0; background:#2e2e2e;}
@@ -22,7 +24,7 @@ export const HeaderSection = {
           :hover:not(.bars_btn, :nth-child(2))::after {background:#fdd000;}
           &.drop_menu {
             ul {display:none; width:100%; height:100%; top:100%;
-              li {
+              li { background: #ffffff;
                 span {color:#000000;}
                 &:hover {background:#fdd000;}
               }
@@ -40,9 +42,8 @@ export const HeaderSection = {
           :not(:first-child,:last-child) {position:relative; flex-grow:1; background:#fdd000;}
           :nth-child(n + 3):nth-child(-n + 6)::after {content:""; position:absolute; width:1px; height:1.2rem; background:#b99f29; top:calc(50% -0.5rem); left:0;}
           span {font-size:1.1rem; font-weight:700; font-family:"NotoKr"; letter-spacing:1px;}
-          &.logo {background:#ffffff;}
-          &:first-child {flex-basis:31.8%;
-            .img_box {padding-left:2.7rem;}
+          &.logo {flex-basis:31.8%; background:#ffffff;
+            .img_box {padding-left:2.7rem; margin-bottom:1%;}
           }
           &:last-child {flex-basis:12%; background:#f4f4f4;
             ul {flex-basis:100%;
