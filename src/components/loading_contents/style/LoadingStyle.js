@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LoadingSection = {
   LoadingFrame: styled.div`
     ul {
-      li {
+      li {flex-basis:calc(100%/4);
         .img_box {
           img {}
         }
