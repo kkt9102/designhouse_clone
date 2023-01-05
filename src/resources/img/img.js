@@ -10,6 +10,14 @@ import footer_logo from "./footer_logo.png";
 
 import content1 from "./contents1.jpg";
 import content2 from "./contents2.jpg";
+import content3 from "./contents3.jpg";
+import content4 from "./contents4.jpg";
+import content5 from "./contents5.jpg";
+import content6 from "./contents6.jpg";
+import content7 from "./contents7.jpg";
+import content8 from "./contents8.jpg";
+import content9 from "./contents9.jpg";
+import content10 from "./contents10.jpg";
 
 const images = {
   Logo_web,
@@ -23,7 +31,15 @@ const images = {
   footer_logo,
 
   content1,
-  content2
+  content2,
+  content3,
+  content4,
+  content5,
+  content6,
+  content7,
+  content8,
+  content9,
+  content10
 };
 
 export default images;

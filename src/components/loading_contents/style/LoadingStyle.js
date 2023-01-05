@@ -16,13 +16,13 @@ export const LoadingSection = {
   `,
   LoadingFrame: styled.div`
     ul {
-      li {flex-basis:calc(85%/4);
+      li {flex-basis:calc(94%/4); width:calc(94%/4); cursor:pointer;
         .img_box {
           img {}
         }
-        .type {}
-        .tit {}
-        .contents {}
+        .type {margin-top:1rem; font-size:1.2rem; color:#a1a0a0;}
+        .tit {margin-top:0.5rem; font-size:2rem; font-weight:600; color:#222222; letter-spacing:-0.9px;}
+        .contents {margin-top:2rem; font-size:1.3rem; color:#666666; font-family:"NotoKr"; word-break:keep-all;}
       }
     }
   `,
