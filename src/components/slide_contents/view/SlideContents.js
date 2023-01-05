@@ -57,7 +57,7 @@ const SlideContents = () => {
               <SwiperSlide key={index}>
                 <div className="img_box relative">
                   <img src={items.img} alt="" />
-                  <a href="javascript:void(0)" className="absolute">
+                  <a href="#" className="absolute">
                     <div className="title">{items.title}</div>
                     <div className="sub_tit">{items.sub_tit}</div>
                   </a>
